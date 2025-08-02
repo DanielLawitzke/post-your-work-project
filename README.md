@@ -1,6 +1,6 @@
 # Bikeshare Data Analysis
 
-This project analyzes bikeshare data from three major US cities: Chicago, New York City, and Washington. 
+This project analyzes bikeshare data from three major US cities: Chicago, New York City and Washington. 
 The interactive Python program allows a user to explore and compare various statistics.
 
 ## Information about how to use your project
