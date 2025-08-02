@@ -134,4 +134,9 @@ def main():
 
 
 if __name__ == "__main__":
-	main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\nProgram interrupted by user. Goodbye!")
+    except Exception as e:
+        print("An error occurred: {}".format(e))
