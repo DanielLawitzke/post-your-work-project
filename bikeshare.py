@@ -16,13 +16,13 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs as numbers
 
 
-    # get user input for month (all, january, february, ... , june)
+    # get user input for month (all, january, february, ... , june) as numbers
 
 
-    # get user input for day of week (all, monday, tuesday, ... sunday)
+    # get user input for day of week (all, monday, tuesday, ... sunday) as numbers
 
 
     print('-'*40)
@@ -134,4 +134,9 @@ def main():
 
 
 if __name__ == "__main__":
-	main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\nProgram interrupted by user. Goodbye!")
+    except Exception as e:
+        print("An error occurred: {}".format(e))
